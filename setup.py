@@ -31,12 +31,10 @@ setup(
     ],
     install_requires=[
         'XBlock',
-        'bleach',
-        'html-xblock==0.1.1',
     ],
     entry_points={
         'xblock.v1': [
-            'excluded_html5 = excluded_html_xblock:ExcludedHTML5XBlock',
+            'excluded_html = excluded_html_xblock:ExcludedHtmlBlock',
         ]
     },
     package_data=package_data("excluded_html_xblock", ["static", "public"]),
